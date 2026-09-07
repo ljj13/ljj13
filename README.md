@@ -102,24 +102,7 @@ Tooling for working with WeChat Channels video files.
 
 ---
 
-## 04 / GITHUB DASHBOARD
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=ljj13&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="GitHub Stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ljj13&layout=compact&hide_border=true&theme=transparent" alt="Top Languages" />
-
-</div>
-
-<div align="center">
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ljj13&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph" />
-
-</div>
-
----
-
-## 05 / CONTRIBUTION SNAKE
+## 04 / CONTRIBUTION SNAKE
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ljj13/ljj13/output/github-contribution-grid-snake-dark.svg">
@@ -129,7 +112,7 @@ Tooling for working with WeChat Channels video files.
 
 ---
 
-## 06 / 3D CONTRIBUTIONS
+## 05 / 3D CONTRIBUTIONS
 
 <div align="center">
 
