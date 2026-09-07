@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "20 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
