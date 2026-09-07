@@ -20,6 +20,7 @@ jobs:
       - name: Generate 3D profile
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ljj13
 
       - name: Commit generated assets
