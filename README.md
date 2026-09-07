@@ -1,11 +1,15 @@
 <div align="center">
 
-# Hi, I'm 李俊杰 / ljj13 👋
+<img src="https://avatars.githubusercontent.com/u/111775747?v=4" width="180" alt="FogPurification avatar" />
 
-### Electronic Information Engineering Student  
-### Embedded Systems · Hardware · Linux
+# FogPurification
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&center=true&vCenter=true&width=720&lines=Embedded+Systems;Hardware+%C3%97+Software;STM32+%26+Embedded+Linux;Building+things+from+PCB+to+Linux" alt="Typing SVG" />
+**从一份好奇心出发，做点有趣，也做点真正有用的东西。**
+
+<p>
+  <a href="https://fogpurification.cc.cd/me"><img src="https://img.shields.io/badge/WEBSITE-FOGPURIFICATION-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="https://github.com/ljj13"><img src="https://img.shields.io/badge/GITHUB-ljj13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
 
 </div>
 
