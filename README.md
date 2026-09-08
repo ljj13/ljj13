@@ -142,11 +142,11 @@ Tooling for working with WeChat Channels video files.
 
 <div align="center">
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=ljj13&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph" />
+<img width="95%" src="./profile-assets/activity-graph.svg" alt="Contribution Activity Graph" />
 
 <br />
 
-<img width="95%" src="https://github-profile-trophy.vercel.app/?username=ljj13&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1" alt="GitHub Trophies" />
+<img width="95%" src="./profile-assets/trophy.svg" alt="GitHub Trophies" />
 
 </div>
 
