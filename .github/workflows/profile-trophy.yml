@@ -9,6 +9,8 @@ on:
       - main
     paths:
       - ".github/workflows/profile-trophy.yml"
+      - "profile-tools/trophy.py"
+      - "profile-tools/test_trophy.py"
 
 permissions:
   contents: write
@@ -21,6 +23,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+
+      - name: Run trophy tests
+        working-directory: profile-tools
+        run: python -m unittest -v test_trophy.py
 
       - name: Prepare asset directory
         run: mkdir -p profile-assets
