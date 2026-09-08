@@ -1,0 +1,54 @@
+name: Generate profile stats cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 1 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Prepare asset directory
+        run: mkdir -p profile-assets
+
+      - name: Generate GitHub stats card
+        uses: Pranesh-2005/github-readme-stats-fast-action@v1.3
+        with:
+          card: stats
+          options: username=ljj13&show_icons=true&hide_border=true&theme=transparent&rank_icon=github
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: profile-assets/github-stats.svg
+
+      - name: Generate top languages card
+        uses: Pranesh-2005/github-readme-stats-fast-action@v1.3
+        with:
+          card: top-langs
+          options: username=ljj13&layout=compact&langs_count=8&hide_border=true&theme=transparent
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: profile-assets/top-languages.svg
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-assets/github-stats.svg profile-assets/top-languages.svg
+          if git diff --cached --quiet; then
+            echo "No stats changes to commit."
+          else
+            git commit -m "chore: update profile stats cards"
+            git push
+          fi
