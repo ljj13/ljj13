@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="205" viewBox="0 0 960 205">
+<style>
+  :root { --fg:#1f2328; --muted:#656d76; --border:#d0d7de; --panel:#f6f8fa; --accent:#0969da; --medal:#ddf4ff; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#8b949e; --border:#30363d; --panel:#161b22; --accent:#58a6ff; --medal:#0c2d6b; } }
+  text { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .title { fill:var(--fg); font-size:20px; font-weight:600; }
+  .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+  .medal { fill:var(--medal); stroke:var(--accent); stroke-width:1.5; }
+  .icon { fill:var(--accent); font-size:16px; font-weight:700; }
+  .value { fill:var(--fg); font-size:26px; font-weight:700; }
+  .label { fill:var(--muted); font-size:12px; }
+</style>
+<text x="17" y="31" class="title">Trophy Board · FogPurification</text>
+<g transform="translate(17,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">★</text>
+  <text x="71" y="79" text-anchor="middle" class="value">1</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Stars</text>
+</g><g transform="translate(173,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">R</text>
+  <text x="71" y="79" text-anchor="middle" class="value">8</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Repositories</text>
+</g><g transform="translate(329,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">F</text>
+  <text x="71" y="79" text-anchor="middle" class="value">1</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Followers</text>
+</g><g transform="translate(485,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">⑂</text>
+  <text x="71" y="79" text-anchor="middle" class="value">0</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Forks</text>
+</g><g transform="translate(641,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">C</text>
+  <text x="71" y="79" text-anchor="middle" class="value">40</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Contributions</text>
+</g><g transform="translate(797,54)">
+  <rect width="142" height="132" rx="12" class="panel" />
+  <circle cx="71" cy="30" r="18" class="medal" />
+  <text x="71" y="36" text-anchor="middle" class="icon">Y</text>
+  <text x="71" y="79" text-anchor="middle" class="value">4</text>
+  <text x="71" y="108" text-anchor="middle" class="label">Years on GitHub</text>
+</g>
+</svg>
