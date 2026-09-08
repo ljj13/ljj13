@@ -1,0 +1,50 @@
+name: Generate profile trophies
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 1 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-trophy.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Prepare asset directory
+        run: mkdir -p profile-assets
+
+      - name: Generate trophy SVG
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: ljj13
+          file: profile-assets/trophy.svg
+          theme: flat
+          max-cols: "6"
+          max-rows: "1"
+          no-background: "true"
+          no-frame: "true"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated trophy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-assets/trophy.svg
+          if git diff --cached --quiet; then
+            echo "No trophy changes to commit."
+          else
+            git commit -m "chore: update profile trophies"
+            git push
+          fi
