@@ -1,0 +1,31 @@
+name: Generate profile summary cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 1 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-summary-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ljj13
+          BRANCH_NAME: main
