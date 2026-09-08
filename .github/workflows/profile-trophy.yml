@@ -11,6 +11,7 @@ on:
       - ".github/workflows/profile-trophy.yml"
       - "profile-tools/trophy.py"
       - "profile-tools/test_trophy.py"
+      - "profile-tools/activity_graph.py"
 
 permissions:
   contents: write
@@ -28,20 +29,15 @@ jobs:
         working-directory: profile-tools
         run: python -m unittest -v test_trophy.py
 
-      - name: Prepare asset directory
-        run: mkdir -p profile-assets
-
       - name: Generate trophy SVG
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          username: ljj13
-          file: profile-assets/trophy.svg
-          theme: flat
-          max-cols: "6"
-          max-rows: "1"
-          no-background: "true"
-          no-frame: "true"
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p profile-assets
+          python profile-tools/trophy.py \
+            --username ljj13 \
+            --display-name FogPurification \
+            --output profile-assets/trophy.svg
 
       - name: Commit generated trophy
         run: |
