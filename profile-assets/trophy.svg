@@ -39,7 +39,7 @@
   <rect width="142" height="132" rx="12" class="panel" />
   <circle cx="71" cy="30" r="18" class="medal" />
   <text x="71" y="36" text-anchor="middle" class="icon">C</text>
-  <text x="71" y="79" text-anchor="middle" class="value">40</text>
+  <text x="71" y="79" text-anchor="middle" class="value">41</text>
   <text x="71" y="108" text-anchor="middle" class="label">Contributions</text>
 </g><g transform="translate(797,54)">
   <rect width="142" height="132" rx="12" class="panel" />
